@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WEB-BLOG</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet">
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    </head>
+
+  <body >
+    <style>
+      body {
+        background: url("https://wallpaperaccess.com/full/7823434.jpg");
+        background-size: cover;
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        background-color: lightgray;
+        color: black;
+      }
+
+      .shadow{
+         box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
+      }
+
+      .btn-danger {
+        color: #fff;
+        background-color: #078a4d;
+        border-color: #003f15;
+      }
+
+      .masthead {   
+        background: url("https://wallpaperaccess.com/full/7823434.jpg");
+        background-size: cover;
+        background-color:lightgray;
+        height: auto;
+        padding-bottom: 15px;
+        box-shadow: 0 16px 48px #003c77;
+        padding-top: 10px;
+      }
+
+      .container-fluid {
+        background-color: lightgray;
+        background: url("https://wallpaperaccess.com/full/7823434.jpg");
+        background-size: cover;
+      }
+
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow"   id="mainNav">
+      <div class="container-fluid" >
+        <a class="navbar-brand text-white " href="{% url 'home' %}" >WEB-BLOG</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item text-strong">
+              <a
+                class="nav-link text-white font-weight-bold" href="{% url 'about' %}"
+                >About</a>
+            </li>
+            
+            <li class="nav-item text-black">
+              <a
+                class="nav-link text-white font-weight-bold"
+                href="{% url 'contact' %}"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    {% block content %} 
+      <!-- Content Goes here -->
+    {% endblock content %}
+    
+    <footer style="background-color:rgb(148, 148, 148); padding: 10px;">
+      <div class="container">
+        <p class="m-0 text-dark text-center"><b>Copyright &copy; S3bi </b></p>
+        
+        <!-- Social Media Icons -->
+        <div class="text-center mt-3">
+          <a href="https://www.facebook.com/yourpage" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-facebook-square fa-2x" style="color: #003c77; box-shadow: 0 8px 2px -2px rgb(2, 22, 114);"></i>
+          </a>
+          <a href="https://twitter.com/yourhandle" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-twitter-square fa-2x" style="color: #07588a; box-shadow: 0 8px 2px -2px rgb(2, 22, 114);"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-linkedin fa-2x" style="color: #0077b5; box-shadow: 0 8px 2px -2px rgb(2, 22, 114);"></i>
+          </a>
+          <a href="https://www.instagram.com/in/yourprofile" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-instagram fa-2x"  style="background: linear-gradient(45deg, #405DE6, #ED4956) text; color: transparent; box-shadow: 0 8px 2px -2px rgb(2, 22, 114);"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

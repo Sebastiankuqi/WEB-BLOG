@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    
+    
+    <style>
+        body {
+        
+            background: url("https://www.linearity.io/blog/content/images/2022/03/610963083219da6a0a00ccb6_Cover-Dark-2.png");
+            font-family: Arial, sans-serif;
+            background-color:lightgray;
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+           
+            
+  
+        }
+
+        .contact-section {
+            background-color: grey;
+            padding: 150px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(18, 20, 184);
+            width: 400px;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+        }
+
+        .contact-section h2 {
+            text-align: center;
+        }
+
+        .contact-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center list items horizontally */
+        }
+
+        .list-item {
+            margin-bottom: 20px;
+        }
+
+        .contact-text {
+            font: 200 18px 'Lato', sans-serif;
+            letter-spacing: 1.9px;
+            color: #000000;
+            margin-top: auto;
+        }
+
+        .place,
+        .phone,
+        .gmail {
+            margin-left: 0;
+        }
+
+        .contact-text a {
+            color: #000000;
+            text-decoration: none;
+            transition-duration: 0.2s;
+        }
+
+        .contact-text a:hover {
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        
+    
+    </style>
+</head>
+<body >
+    
+<div class="contact-section">
+    <h2>Contact Us</h2>
+    <ul class="contact-list">
+        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Tirana , Albania</span></i></li>
+        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:123123123" title="Give me a call">123123123</a></span></i></li>
+        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">username@gmail.com</a></span></i></li>
+    </ul>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock%}

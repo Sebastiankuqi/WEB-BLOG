@@ -1,0 +1,27 @@
+{% block sidebar %}
+
+<style>
+        .card{
+            
+            box-shadow: 0 16px 48px #114b85;
+           
+        }
+        .card my-4{
+            background: url(https://capitalmarketsblog.accenture.com/wp-content/uploads/2023/06/CM-Blog-Long-TER.jpg);
+        }
+       
+</style>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right " >
+<div class="card my-4">
+        <h5 class="card-header">About</h5>
+    <div class="card-body" >
+        <p class="card-text" >Webi eshte krijuar si nje blog online ku mund te hidhen postime te ndryshme</p>
+        <a href="{% url 'about' %}"
+           class="btn btn-danger">Know more!</a>
+    </div>
+</div>
+</div>
+
+{% endblock sidebar %}
